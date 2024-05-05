@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$symmetric-hash-417306/tegar-project', '.']
+    args: ['build', '-t', 'gcr.io/symmetric-hash-417306/tegar-project', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$symmetric-hash-417306/tegar-project']
+    args: ['push', 'gcr.io/symmetric-hash-417306/tegar-project']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    args: ['run', 'deploy', 'customer-service', '--image', 'gcr.io/$symmetric-hash-417306/tegar-project', '--region', 'us-central1']
+    args: ['run', 'deploy', 'customer-service', '--image', 'gcr.io/symmetric-hash-417306/tegar-project', '--region', 'us-central1']

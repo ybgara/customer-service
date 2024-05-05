@@ -4,4 +4,4 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$symmetric-hash-417306/Tegar-Project']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    args: ['run', 'deploy', 'customer-service', '--image', 'gcr.io/$symmetric-hash-417306/Tegar-Project', '--region', 'asia-southeast2']
+    args: ['run', 'deploy', 'customer-service', '--image', 'gcr.io/$symmetric-hash-417306/Tegar-Project', '--region', 'us-central1']
